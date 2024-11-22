@@ -1,0 +1,520 @@
+/* General Layout */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Two equal columns */
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  /* Ensure the row takes full width */
+  box-sizing: border-box;
+  /* Include padding and border in element's width and height */
+}
+
+/* Form Sections */
+.form-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  width: 100%;
+  /* Ensure title takes full width */
+}
+
+/* Input Fields for Product Info Section */
+.product-info-input,
+.product-info-textarea {
+  width: 90%;
+  /* Ensure inputs do not overflow */
+  padding: 12px;
+  margin-bottom: 15px;
+  /* Adds space between fields */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  /* Add space between the label and input field */
+}
+
+.product-info-select {
+  width: 95%;
+  /* Ensure inputs do not overflow */
+  padding: 12px;
+  margin-bottom: 15px;
+  /* Adds space between fields */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+
+.product-info-input:focus,
+.product-info-select:focus,
+.product-info-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: #fff;
+}
+
+.product-info-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Input Fields for Overview, Options, and Designs Sections */
+.image-text-title-input {
+  width: 90%;
+  /* Ensure inputs do not overflow */
+  padding: 12px;
+  margin-bottom: 15px;
+  /* Adds space between fields */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  /* Add space between the label and input field */
+  margin-left: 10px;
+  /* Add space between the label and input field */
+}
+
+.image-text-image-input {
+  width: 140%;
+  /* Ensure inputs do not overflow */
+  padding: 12px;
+  margin-bottom: 15px;
+  /* Adds space between fields */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  margin-left: 10px;
+  /* Add space between the label and input field */
+}
+
+.image-text-textarea {
+  width: 90%;
+  /* Ensure inputs do not overflow */
+  padding: 12px;
+  margin-bottom: 15px;
+  /* Adds space between fields */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  margin-left: 10px;
+  /* Add space between the label and input field */
+}
+
+.image-text-title-input:focus,
+.image-text-image-input:focus,
+.image-text-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: #fff;
+}
+
+.image-text-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Drag-and-Drop Area */
+.image-drop-area {
+  margin-top: 10px;
+  margin-left: 7px;
+  width: 85%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-drop-area:hover {
+  border-color: #3b82f6;
+}
+
+/* Image Preview */
+.image-preview {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Image Preview Modal */
+.image-preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-preview-content {
+  position: relative;
+}
+
+.image-preview-large {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+/* Placeholder Text */
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+/* Form Group Label */
+.form-group label {
+  display: block;
+  margin-bottom: 9px;
+  /* Space below label */
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+/* Product Images Section */
+.image-upload-container {
+  margin-top: 20px;
+  width: 100%;
+  /* Ensure container takes full width */
+}
+
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.upload-area:hover {
+  border-color: #3b82f6;
+}
+
+.upload-area span {
+  font-size: 14px;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.upload-area p {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+/* Image grid for uploaded images */
+.uploaded-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.uploaded-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.image-options {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploaded-images .image-container {
+  position: relative;
+}
+
+.uploaded-images .image-container:hover .image-options {
+  display: flex;
+}
+
+/* Replace/Remove buttons */
+.image-options button {
+  background-color: rgb(186, 70, 70);
+  color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.image-options button:hover {
+  background-color: red;
+}
+
+/* Buttons */
+.add-more-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+  display: block;
+}
+
+.add-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Remove Button */
+.remove-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background: #c82333;
+}
+
+/* Dropdown for Product Requirements */
+.dropdown-section {
+  margin-bottom: 10px;
+}
+
+.dropdown-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.requirements-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.requirements-content.show {
+  display: block;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Image Area Styling */
+.image-area {
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+.image-area img {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+/* Dropdown for Product Requirements */
+.dropdown-section {
+  margin-bottom: 10px;
+}
+
+.dropdown-title {
+  color: black;
+  border: none;
+  padding: 10px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  /* This aligns the text and icon on opposite ends */
+  align-items: center;
+  /* Centers the icon vertically */
+}
+
+.dropdown-arrow-icon {
+  font-size: 24px;
+  /* Adjust the size as needed */
+  color: black;
+  /* Ensure the color matches the design */
+}
+
+.requirements-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.requirements-content.show {
+  display: block;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .add-more-button {
+    width: 100%;
+  }
+
+  .image-text-entry {
+    margin-bottom: 15px;
+  }
+}
+
+.image-preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-preview-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;  /* Adjust this to control the width */
+  max-height: 80%; /* Adjust this to control the height */
+}
+
+.image-preview-large {
+  max-width: 100%;  /* This ensures the image fits within the modal */
+  max-height: 100%; /* Ensures the image doesn't overflow */
+  object-fit: contain; /* Makes sure the aspect ratio is maintained */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Arrows */
+.prev-image-button,
+.next-image-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.prev-image-button {
+  left: 10px;
+}
+
+.next-image-button {
+  right: 10px;
+}
+
+.prev-image-button:hover,
+.next-image-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

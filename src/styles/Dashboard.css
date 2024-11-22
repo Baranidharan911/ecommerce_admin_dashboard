@@ -1,0 +1,347 @@
+/* Add padding to the top of the main content area */
+.overview {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9fafc;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    /* Adjust this value based on the height of your header */
+}
+
+.dashboard-title {
+    grid-column: span 12;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-costs {
+    grid-column: span 8;
+}
+
+.sessions {
+    grid-column: span 4;
+}
+
+.orders,
+.profit,
+.discount {
+    grid-column: span 4;
+}
+
+.reports {
+    grid-column: span 7;
+}
+
+.users {
+    grid-column: span 5;
+}
+
+.top-selling-category {
+    grid-column: span 6;
+}
+
+.last-transactions {
+    grid-column: span 6;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.sales-costs-values,
+.session-value,
+.order-value,
+.profit-value,
+.discount-value {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sales-value {
+    color: #007bff;
+}
+
+.cost-value {
+    color: #00c853;
+}
+
+.percentage-text {
+    font-size: 14px;
+    color: #00c853;
+    margin-top: 10px;
+}
+
+.percentage-text.down {
+    color: #ff5252;
+}
+
+.chart-container {
+    height: 150px;
+}
+
+.chart-container canvas {
+    max-height: 120px;
+}
+
+/* Reports Section */
+.reports .chart-container {
+    height: 200px;
+    /* Increase height to make the graph fill the container */
+}
+
+.reports .chart-container canvas {
+    max-height: 180px;
+    /* Increase height of the chart */
+}
+
+.report-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    text-align: center;
+    flex: 1;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.tab-name {
+    font-size: 12px;
+    color: #666;
+}
+
+.tab.active .tab-value {
+    color: #007bff;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Users Section */
+.users-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sales-by-country {
+    list-style: none;
+    padding: 0;
+}
+
+.sales-by-country li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.country-name {
+    flex: 1;
+    font-size: 14px;
+}
+
+.country-sales {
+    flex: 0 0 40px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.country-bar {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+}
+
+.country-percentage {
+    flex: 0 0 50px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Alignment adjustments for the Users section */
+.users .chart-container {
+    position: relative;
+    padding-bottom: 30px;
+    /* Extra space for numbers below */
+}
+
+.users .chart-container canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.users .user-chart-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    /* Pull the numbers closer to the chart */
+}
+
+.users .user-chart-numbers div {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    flex: 1;
+}
+
+/* Top Selling Category */
+.top-selling-category .chart-container {
+    height: 300px;
+}
+
+.top-selling-category .chart-container canvas {
+    max-height: 280px;
+}
+
+/* Last Transactions */
+.last-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.last-transactions th,
+.last-transactions td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.last-transactions th {
+    font-weight: bold;
+    color: #333;
+}
+
+.last-transactions a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.last-transactions a:hover {
+    text-decoration: underline;
+}
+
+/* Best Selling Products Section */
+.best-selling-products {
+    grid-column: span 7;
+}
+
+.best-selling-products table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.best-selling-products th,
+.best-selling-products td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.best-selling-products th {
+    font-weight: bold;
+    color: #333;
+}
+
+.status {
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.in-stock {
+    background-color: #00c853;
+    color: #fff;
+}
+
+.out-of-stock {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+/* Trending Products Section */
+.trending-products {
+    grid-column: span 5;
+}
+
+.trending-products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trending-products-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    flex: 1 1 50%;
+}
+
+.product-item {
+    font-size: 12px;
+    color: #666;
+    flex: 1 1 30%;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    flex: 1 1 20%;
+}

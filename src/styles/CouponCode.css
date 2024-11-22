@@ -1,0 +1,290 @@
+/* Container for the whole coupon code component */
+.unique-coupon-code-container {
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px; /* Reduced max-width to fit better */
+  margin: auto;
+  margin-top: 40px;
+}
+
+/* Header styles */
+.unique-coupon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.unique-coupon-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Form styles */
+.unique-coupon-form {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.unique-form-row {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure no wrapping */
+  gap: 10px; /* Adjust gap for tighter spacing */
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.unique-form-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+  white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.unique-form-input, .unique-form-select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-grow: 1;
+  min-width: 100px; /* Ensure a minimum width */
+  max-width: 150px; /* Adjusted max-width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+
+.unique-form-input:focus, .unique-form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Coupon and Discount Fields */
+.coupon-input-group, .discount-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap for better spacing */
+}
+
+.combined-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 300px; /* Adjust as needed */
+}
+
+/* Dropdown inside the combined container */
+.combined-select {
+  border: none;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Input field inside the combined container */
+.combined-input-field {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  background-color: #ffffff;
+  min-width: 100px; /* Ensure a minimum width */
+  width: 150px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 14px;
+}
+
+.combined-input-field:focus {
+  outline: none;
+}
+
+/* Focus state */
+.combined-select:focus,
+.combined-input-field:focus {
+  border-color: #0056b3; /* A slightly darker blue */
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Stronger shadow */
+}
+
+/* Button styles */
+.unique-create-coupon-btn {
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.unique-create-coupon-btn:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Coupon list table styles */
+.unique-coupon-list {
+  margin-top: 20px;
+}
+
+.unique-coupon-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: auto;
+}
+
+.unique-coupon-th, .unique-coupon-td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.unique-coupon-th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.unique-coupon-td {
+  background-color: #fff;
+}
+
+.unique-coupon-tr:last-child .unique-coupon-td {
+  border-bottom: none;
+}
+
+.unique-coupon-tr:hover {
+  background-color: #f1f1f1; /* Light grey on hover */
+}
+
+/* Action buttons (Edit/Delete) */
+.unique-edit-btn, .unique-delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  margin-right: 5px; /* Added spacing */
+}
+
+.unique-edit-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.unique-edit-btn:hover {
+  background-color: #138496;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.unique-delete-btn {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+.unique-delete-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Status toggle button */
+.unique-status-toggle-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  min-width: 70px;
+}
+
+.unique-status-toggle-btn.active {
+  background-color: #28a745;
+}
+
+.unique-status-toggle-btn.inactive {
+  background-color: #dc3545;
+}
+
+.unique-status-toggle-btn:hover.active {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.unique-status-toggle-btn:hover.inactive {
+  background-color: #c82333;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 1000px) {
+  .unique-form-row {
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      justify-content: space-between;
+  }
+
+  .unique-form-input, .unique-form-select {
+      min-width: 90px;
+      max-width: 130px;
+  }
+
+  .unique-create-coupon-btn {
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .unique-form-row {
+      flex-direction: column;
+      gap: 15px; /* Reduced gap for mobile */
+  }
+
+  .coupon-input-group, .discount-input-group {
+      flex-direction: column;
+  }
+
+  .coupon-type-select, .discount-type-select,
+  .coupon-code-input, .discount-value-input {
+      width: 100%;
+  }
+
+  .unique-create-coupon-btn {
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .unique-coupon-table {
+      font-size: 12px;
+      width: 100%;
+  }
+
+  .unique-coupon-th, .unique-coupon-td {
+      padding: 8px; /* Slight reduction for smaller screens */
+  }
+
+  .unique-status-toggle-btn {
+      padding: 6px 10px;
+      min-width: 60px;
+  }
+}

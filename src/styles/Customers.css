@@ -1,0 +1,170 @@
+.customers-page {
+    padding: 20px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container-customers {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-customers {
+    padding: 8px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+}
+
+.clear-search-customers {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+
+.customers-table {
+    width: 100%;
+    border-spacing: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.customers-table th, .customers-table td {
+    padding: 20px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+    vertical-align: middle;
+}
+
+.customers-table th {
+    background-color: #F7FAFC;
+    color: #4A5568;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.customers-table td {
+    background-color: white;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+}
+
+.customer-avatar {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #4A90E2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-avatar img.profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-email {
+    color: #888;
+    font-size: 12px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.actions input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.actions button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #3182CE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #2B6CB0;
+}
+
+.actions .cancel-button {
+    background-color: #E53E3E;
+}
+
+.actions .cancel-button:hover {
+    background-color: #C53030;
+}
+
+.actions button:disabled {
+    background-color: #A0AEC0;
+    cursor: not-allowed;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.page-numbers {
+    display: flex;
+}
+
+.page-numbers span {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page-numbers .active {
+    background-color: #3182CE;
+    color: white;
+}
+
+/* Edit Mode Styling */
+.customers-table input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.actions input[type="file"] {
+    display: block;
+    margin-top: 10px;
+}

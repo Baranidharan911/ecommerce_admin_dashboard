@@ -1,0 +1,37 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafc;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar-open .overview-container {
+    margin-left: 250px;
+    /* Sidebar width */
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .sidebar-closed .overview-container {
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  /* Dashboard Content Area */
+  .overview-container {
+    flex-grow: 1;
+    padding: 20px;
+    padding-top: 80px;
+    /* Adjust top padding to avoid overlap with header */
+    background-color: #f9fafc;
+  }

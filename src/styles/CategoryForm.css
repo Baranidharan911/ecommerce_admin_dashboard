@@ -1,0 +1,100 @@
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Container */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-container textarea {
+    height: 150px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Categories List Styling */
+.categories-list {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+

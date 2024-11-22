@@ -1,0 +1,87 @@
+.product-parameters-form {
+    padding: 20px;
+    background-color: #f9fafc;
+    font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parameter-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+    height: 350px; /* Fixed height for all boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parameter-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.parameter-input {
+    margin: 10px 0;
+}
+
+.add-button {
+    background-color: #007aff;
+    margin-top: 12px;
+    float: right;
+}
+
+.add-button:hover {
+    background-color: #005ecb;
+}
+
+.MuiChip-root {
+    margin: 5px;
+    padding: 8px 12px; /* Adding padding to the chips */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.MuiChip-root:hover {
+    background-color: #d0d0d0;
+}
+
+.chip-container {
+    margin-top: 10px;
+    max-height: 150px; /* Limit the height of the chip area */
+    overflow-y: auto; /* Add vertical scroll if content exceeds height */
+    padding-right: 8px; /* Provide space for the scrollbar */
+}
+
+.MuiDialogContent-root {
+    padding: 20px 24px;
+}
+
+.MuiDialogActions-root {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.MuiInputLabel-root {
+    font-size: 16px;
+    color: #333;
+}
+
+.MuiInputBase-root {
+    font-size: 16px;
+}
+
+.MuiButton-textSecondary {
+    color: #e74c3c;
+}
+
+.MuiButton-textPrimary {
+    color: #007aff;
+}
